@@ -5,7 +5,7 @@ Run async OpenFaas functions and receive results back via MQTT.
 To run a function, publish a message
 on the topic `openfaas/invoke/function-name` with a JSON payload.
 
-```json
+```js
 {
     "input": "input for openfaas function",
     
@@ -18,10 +18,12 @@ on the topic `openfaas/invoke/function-name` with a JSON payload.
 
 You can then listen for results on the `openfaas/results/function-name` topic.
 
-```json
+```js
+{
     "output": "output from the function",
     "params": {
         "params": "are passed through"
     }
+}
 ```
 
