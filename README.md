@@ -27,3 +27,4 @@ You can then listen for results on the `openfaas/results/function-name` topic.
 }
 ```
 
+You can configure the bridge by setting environmental variables manually or in a `.env` file. They're currently documented in the [.env.example](.env.example) file.
